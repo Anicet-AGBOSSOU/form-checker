@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Checker Anicet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+  <h2>Bienvenu sur la plateforme d'inscription à la formation 
+    Dev Web du programme D-CLIC</h2>
+    <h4> Veillez remplir le formulaire ci-dessous</h4>
+    <form id="inscription">
+        <fieldset>
+          <legend>Formulaire d'inscription à la formation 
+            Dev Web du programme D-CLIC</legend><br>
+
+          <label for="name">Nom</label><br>
+          <input type="text" id="nom" name="name" required><br><br>
+
+          <label for="firstname">Prénoms</label><br>
+          <input type="text" id="prenoms" name="firstname" max="18/02/2007" required><br><br>
+
+          <label for="birth">Date de Naissance</label><br>
+          <input type="date" id="dateNaissance" name="birth" required><br><br>
+           
+          <label for="age">Age</label><br>
+          <input type="number" id="age" name="age" min="18" required><br><br>
+
+          <label for="phone">Numéro de Téléphone</label><br>
+          <input type="tel" id="telephone" name="phone" 
+           required placeholder="Ex: 01XXXXXXXX"><br><br>
+
+          <label for="motivation">Motivation (1000-2500 caractères)</label><br>
+          <textarea type="text" id="motivation" name="motivation"  
+          required minlength="1000" maxlength="2500"></textarea><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required placeholder="Ex: dclic@gmail.com"><br><br>
+
+          <label for="commentaire">Commentaire (facultatif)</label>
+          <br><textarea type="text" id="commentaire" name="commentaire"></textarea><br><br>
+
+         <br><input type="submit" id="submit" value="Envoyez"><br>
+
+         <h5><br>NB: Vous devrez  avoir au moins 18 ans avant de vous <br>
+          incrire à la formation Dev Web du programme D-CLIC. </br></h5>
+  
+        </fieldset>
+      </form>
+      <fieldset id="valider">
+        <legend> <h2>Informations saisies</h2></legend>
+      <div id="reussi" class="hidden">
+        <p><strong>Nom: </strong> <span id="resNom"></span></p>
+        <p><strong>Prenoms: </strong> <span id="resPrenoms"></span></p>
+        <p><strong>Date de Naissance: </strong> <span id="resDateNaissance"></span></p>
+        <p><strong>Age: </strong> <span id="resAge"></span></p>
+        <p><strong>Téléphone: </strong> <span id="resTel"></span></p>
+        <p><strong>Motivation: </strong> <span id="resMotivation"></span></p>
+        <p><strong>Email: </strong> <span id="resEmail"></span></p>
+        <p><strong>Commentaire (facultatif): </strong> <span id="resCommentaire"></span></p>
+      </div>
+      </fieldset>
+
+
+</body>
+</html>
